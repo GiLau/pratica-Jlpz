@@ -1,0 +1,265 @@
+/********************
+GENERAL
+********************/
+body{
+	background-image: url("../img/coyotito.png");
+}
+
+
+a {
+	text-decoration: none;
+	color:white;
+}
+#wrapper {
+	max-width:940px;
+	margin:0 auto;
+	padding: 0 10%;
+	background: #7698E6;
+}
+
+/*******************
+HEADING
+*******************/
+
+#logoimg{
+	max-width:7%;
+}
+
+#logo{
+	text-align:center;
+	margin:0;
+}
+
+header{
+	float:left;
+	margin: 0 0 30px 0;
+	padding:5px 0 0 0;
+	width: 100%;
+background: white;
+border-color: #599a68;
+}
+
+h1{
+	font-family: 'Bangers', cursive;
+	margin:15px 0; /*margen de arriba y abajo 15px y a los lados sin margen*/
+	font-size: 3em;
+	font-weight: normal;
+	line-height: 0.8em;
+	color: #190174;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: -5px 0 0;
+	color: #190174;
+	font-weight: none;
+}
+
+img {
+max-width: 100%;
+}
+
+#galeria {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+#galeria li{
+	float:left;
+	width:45%;
+	margin:2.5%;
+	background-color: #003333;
+	color: red;
+}
+
+#galeria li a p {
+	margin:0;
+	padding:5%;
+	font-size: 1.75em;
+	color:orange;
+}
+
+/*******************
+NAVIGATION
+*******************/
+nav {background-color: #CAA919;}
+
+nav a {
+font-weight:800;
+padding: 15px 10px;
+}
+
+nav a.selected {
+	color:#17016B;
+}
+
+nav a:hover{
+	color: #17016B;
+}
+
+nav ul {
+	list-style: none;
+	margin:0 10px;
+	padding: 0;
+}
+
+nav li {display:inline-block;}
+
+/*******************
+FOOTER
+*******************/
+
+footer{
+	clear:both;
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 50px;
+	color:#190174;
+}
+
+footer a img.social-icon
+{
+	width:30px;
+	height: 30px;
+	margin:0 5px;
+}
+
+
+
+/*******************
+PAGINA ABOUT
+tag SECTION
+*******************/
+
+.profile-photo{
+	display:block;
+	max-width: 400px;
+	margin:0 auto 30px;
+	border-radius:100%;
+}
+
+/*******************
+PAGINA CONTACT
+tag SECTION
+*******************/
+
+.contact-info li.phone a{
+	background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a{
+	background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a{
+	background-image: url('../img/twitter.png');
+}
+
+.contact-info{
+	list-style: none;
+	padding:0;
+	margin:0;
+	font-size: 0.9em;
+}
+
+.contact-info a{
+	display:block;
+	min-height:20px;
+	background-repeat:no-repeat;
+	background-size: 20px 20px;
+	padding:0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+.contact-photo{
+	display:block;
+	max-width: 250px;
+	margin:0 auto 30px;
+	border-radius:100%;
+}
+
+/*******************
+PAGINA PRODUCTS
+tag SECTION
+*******************/
+
+#product-line{
+	font-family: 'Bangers', cursive;
+	margin:15px 0; /*margen de arriba y abajo 15px y a los lados sin margen*/
+	font-size: 3em;
+	font-weight: normal;
+	line-height: 0.8em;
+	color: #003333;
+}
+
+#galeria-products {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+#galeria-products li{
+	float:left;
+	max-width:25%;
+	margin:2.5%;
+	background-color: none;
+	color: #003333;
+}
+
+#galeria-products li a p {
+	margin:0;
+	padding:5%;
+	font-size: 1.75em;
+	color:red;
+}
+
+.product-photo{
+	display:block;
+	margin:0 auto 30px;
+	border-radius:100%;
+	border-top-left-radius: 
+}
+
+#overlay
+{
+	background: rgba(0,0,0,0.7); /*El último valor es opacity(opacidad)*/
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left:0;
+	text-align: center;
+	display: none;
+}
+
+
+#overlay img
+{
+	margin-top: 10%;
+}
+
+#overlay p
+{
+	color: white;
+}
+
+
+/****************************
+Menu para mobiles con JQuery
+****************************/
+@media (min-width: 320px) and (max-width: 568px)
+{
+	#menu ul
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 568px)
+{
+	#menu select, #menu button
+	{
+		display:none;
+	}
+}

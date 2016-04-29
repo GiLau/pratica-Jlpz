@@ -1,0 +1,66 @@
+@media screen and (min-width: 480px)
+{
+	#primary
+	{
+		width:50%;
+		float: left;
+	}
+
+	#secondary
+	{
+		width:40%;
+		float: right;
+	}
+
+	#galeria li
+	{
+		width: 28.3333%;
+	}
+
+
+/*Para que no se monten los elementos y cuando se llegue
+al 3n+1 salte a la siguiente linea*/
+	#galeria li:nth-child(3n+1)
+	{
+		clear: left;
+	}
+
+
+	.profile-photo
+	{
+		float:left;
+		margin: 0 5% 120px 0;
+	}
+
+
+@media screen and (min-width: 660px)
+{
+	nav {
+		background-color: #CAA919;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width:100%;
+	}
+
+
+/*Ajustar el encabezado en pantalla de 660px (PC)
+Alinearlo a la izquierda*/
+		#logo{
+		float:left;
+		margin-left: 5%;
+		text-align: left;
+		width:45%;
+	}
+	h1 {font-size: 1.5em;}	
+
+	h2 {font-size: 0.825em;
+		margin-bottom: 20px;}
+
+	header
+	{
+		border-bottom: 5px solid gray;
+		margin-bottom: 60px;
+	}
+}
