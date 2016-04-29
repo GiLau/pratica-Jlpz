@@ -2,11 +2,15 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href='https://fonts.googleapis.com/css?family=Bangers|Amaranth|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<!--para llamar las librerias de las fuentes -->	
+	<link href='https://fonts.googleapis.com/css?family=Bangers|Amaranth|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> 
+	<!--ESTA LINEA LLAMA AL CSS-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--PARA EL TITULO DE LA PAGINA-->
 	<title>
 		Coyote Express
 	</title>
+	<!--DEFINE EL TIPO DE CARACTERES Q VAMOS A UTILIZAR-->
 	<meta charset="UTF-8">
 	<meta name="keywords" content="UPSE, expreso, coyote, Santa Elena">
 	<meta name="description" content="Transporte expreso sin animo de lucro a beneficio de los estudiantes de Playas y Posorja">
@@ -16,6 +20,7 @@
 	<header>
 		<a href="index.html" id="logo">
 			<h1>
+				<!--SRC PARA LLAMAR A UNA IMAGEN DENTRO DE UNA CARPETA ESPECIFICA, IDENTIFICADOR DE ID ES EL LOGOIMG ***Y DE CLASES***-->
 				<img id="logoimg" src="img/coyote.jpg" alt="Logo_Expreso">
 				Coyote Express - La mejor opcion para llegar a la UPSE
 			</h1>
@@ -24,7 +29,7 @@
 			</h2>
 		</a>
 		<nav id="menu">
-			<ul>
+			<ul> <!--LISTA DESORDENADA, EL OL ES PARA LISTA ORDENADA, LI PARA LOS ELEMENTOS DE LA LISTA, A --> 
 				<li><a href="index.html" class="selected">Galeria</a></li>
 				<li><a href="about.html">Acerca</a></li>
 				<li><a href="products.html">Productos</a></li>
@@ -32,7 +37,7 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="wrapper">
+	<div id="wrapper"> <!--DIV CAJA O CONTENEDOR-->
 		<section>
 			<ul id="galeria">
 				<li>
@@ -59,7 +64,7 @@
 				<p>&copy; 2016 Johao Lopez</p>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> <!--EL SCRIPT(CODIGO FUERA) SIEMPRE TIENE Q IR AL FINAL DEL BODY, ESTA LINEA ES INDISPENSABLE PORQ LLAMAN LAS LIBRERIAS DE JQUERY DESDE LA PAGINA OFICIAL-->
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script> <!--LLAMA AL ARCHIVO JS QUE DEBEMOS TENER EN NUESTRO PROYECTO-->
 </body>
 </html>

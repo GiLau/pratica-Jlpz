@@ -1,9 +1,13 @@
 //2. Agregar overlay Ligthbox
+
+//$=significa que estamos codificando en jquery
+//el dom es una estructura del html 
 var $overlay = $("<div id='overlay'></div>");
 var $image = $("<img>");
 var $caption = $("<p></p>");
 
 //2.1 con imagen
+//append funciona con junto con la variable va concatenando variable por variable
 $overlay.append($image);
 
 //2.2 un texto
@@ -11,11 +15,13 @@ $overlay.append($caption);
 
 //agregar el overlay al body
 $("body").append($overlay);
-
+//(function(event) quiere decir q esto se cumpla osea el click
 
 $("#galeria li a").click(function(event)
 {
+	//preventdefault impedir q se ejecute el evento por defecto osea despues de click no haga nada
 	event.preventDefault();
+	//.attr estraeme algo de este elemento href extrame la descripcion de una etiqueta html
 	var href=$(this).attr("href");
 
 	//1.1 Mostrar el light box con la imagen a la que se dio click
@@ -24,21 +30,25 @@ $("#galeria li a").click(function(event)
 	var texto = $(this).children("img").attr("alt");
 	$caption.text(texto);
 
+	//muestra lo que hay dentro de la variable overlay
 	$overlay.show();
+	//para imprimir por consola imprime el href osea el vinculo
 	console.log(href);
 });
 
-
+//esta linea es obligatoria, 
 $overlay.click(function()
 {
 	$overlay.hide();
 });
-
+//ARRAY ES UN CONTENEDOR Q VA A  TENER UN INDEX POR ESA RAZON SIEMPRE ESTARA EL INDEX.OFF 
 //crear elemento select
 var $select = $("<select></select>");
+//# significa el selector
 $("#menu").append($select);
 
 //recorrer el menu con la funcion each
+//para q sirve el eachpara modificar todos los elementos q tiene el menu
 $("#menu a").each(function()
 {
 	var $anchor = $(this);
@@ -51,9 +61,11 @@ $("#menu a").each(function()
 	//agregar option al select
 	$select.append($option);
 
-	//obtener si el link en la pagina actual (tiene clase selected)
+	//el hasclass sirve para obtener si el link en la pagina actual (tiene clase selected)
+	
 	if($(this).hasClass("selected"))
 	{
+		
 		$option.prop("selected",true);
 	}
 
@@ -70,5 +82,6 @@ $button.click(function()
 
 $select.change(function()
 	{
+		//que el jquery no se ejecute hasta que cargue completamente la ventana
 		window.location=$select.val();
 	});
